@@ -8,7 +8,7 @@ defmodule Discourse.MixProject do
       app: :discourse,
       version: @version,
       description: "Simple Discourse library including SSO support.",
-      elixir: "~> 1.8",
+      elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
