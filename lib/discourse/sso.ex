@@ -179,7 +179,7 @@ defmodule Discourse.SSO do
   end
 
   defp encode_field({field, _}) when field in @fields do
-    Logger.warn(fn -> "Discourse SSO: Invalid value for: #{field}" end)
+    Logger.warning(fn -> "Discourse SSO: Invalid value for: #{field}" end)
   end
 
   @spec sig(binary, Keyword.t()) :: String.t()
